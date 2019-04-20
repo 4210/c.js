@@ -10,7 +10,7 @@ function z(q) {
   return x[q]
 }
 
-function c(q) {
+function a(q) {
   return x[q].apply(null, Array.prototype.slice.call(arguments, 1))
 }
 
@@ -28,3 +28,15 @@ function n() {
   x[0][0] = q
   return q
 }
+
+var m = typeof exports != 'undefined'
+  ? exports
+  : typeof self != 'undefined'
+    ? self
+    : window
+
+m.s = s
+m.z = z
+m.n = n
+m.a = a
+m.r = r
