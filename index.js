@@ -10,7 +10,7 @@ function z(q) {
   return x[q]
 }
 
-function a(q) {
+function i(q) {
   return x[q].apply(null, Array.prototype.slice.call(arguments, 1))
 }
 
@@ -38,5 +38,5 @@ var m = typeof exports != 'undefined'
 m.s = s
 m.z = z
 m.n = n
-m.a = a
+m.i = i
 m.r = r
