@@ -6,6 +6,7 @@
 const parseCSV = require('csv-parse/lib/sync')
 const UglifyJS = require('uglify-es')
 const YAML = require('js-yaml')
+const zlib = require('zlib')
 const fs = require('fs')
 const {
   parseMethods
@@ -48,6 +49,7 @@ if (mout.error) console.log(mout)
 
 write('./build/x.js', out)
 write('./build/x.min.js', mout.code)
+write('./build/x.min.js.gz', zlib.gzipSync(mout.code))
 write('./build/x.csv', cout)
 
 /**

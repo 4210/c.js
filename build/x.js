@@ -693,7 +693,7 @@ s(function(){
 })
 
 /**
- * CHECK_IF_TRUE
+ * CHECK_IF_TRUTHY
  */
 
 s(function(){
@@ -701,7 +701,23 @@ s(function(){
 })
 
 /**
+ * CHECK_IF_TRUE
+ */
+
+s(function(){
+  x === true
+})
+
+/**
  * CHECK_IF_FALSE
+ */
+
+s(function(){
+  x === false
+})
+
+/**
+ * CHECK_IF_BLANK
  */
 
 s(function(){
@@ -842,7 +858,7 @@ s(function(){
 
 n(function(){
   const a = v(x)
-  s1(0, a)
+  h1(0, a)
 })
 
 /**
@@ -851,7 +867,7 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  s1(1, a)
+  h1(1, a)
 })
 
 /**
@@ -860,7 +876,7 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  s1(2, a)
+  h1(2, a)
 })
 
 /**
@@ -869,8 +885,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(3, a)
-  const e = s1(0, c)
+  const c = h1(3, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -880,8 +896,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(4, a)
-  const e = s1(0, c)
+  const c = h1(4, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -891,8 +907,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(5, a)
-  const e = s1(0, c)
+  const c = h1(5, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -902,8 +918,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(6, a)
-  const e = s1(0, c)
+  const c = h1(6, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -914,8 +930,8 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  const e = s2(7, a, c)
-  const m = s1(0, e)
+  const e = h2(7, a, c)
+  const m = h1(0, e)
   return m
 })
 
@@ -926,8 +942,8 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  const e = s2(8, a, c)
-  const m = s1(0, e)
+  const e = h2(8, a, c)
+  const m = h1(0, e)
   return m
 })
 
@@ -937,8 +953,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(9, a)
-  const e = s1(0, c)
+  const c = h1(9, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -948,8 +964,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(10, a)
-  const e = s1(0, c)
+  const c = h1(10, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -959,8 +975,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(11, a)
-  const e = s1(0, c)
+  const c = h1(11, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -970,8 +986,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(12, a)
-  const e = s1(0, c)
+  const c = h1(12, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -981,8 +997,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(13, a)
-  const e = s1(0, c)
+  const c = h1(13, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -992,8 +1008,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(14, a)
-  const e = s1(0, c)
+  const c = h1(14, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1003,8 +1019,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(15, a)
-  const e = s1(0, c)
+  const c = h1(15, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1014,8 +1030,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(16, a)
-  const e = s1(0, c)
+  const c = h1(16, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1025,8 +1041,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(17, a)
-  const e = s1(0, c)
+  const c = h1(17, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1036,8 +1052,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(18, a)
-  const e = s1(0, c)
+  const c = h1(18, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1048,8 +1064,8 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  const e = s2(19, a, c)
-  const m = s1(0, e)
+  const e = h2(19, a, c)
+  const m = h1(0, e)
   return m
 })
 
@@ -1059,8 +1075,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(20, a)
-  const e = s1(0, c)
+  const c = h1(20, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1070,8 +1086,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(21, a)
-  const e = s1(0, c)
+  const c = h1(21, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1082,8 +1098,8 @@ n(function(){
 n(function(){
   const a = v(i)
   const c = v(b)
-  const e = s2(22, a, c)
-  const m = s1(0, e)
+  const e = h2(22, a, c)
+  const m = h1(0, e)
   return m
 })
 
@@ -1093,7 +1109,7 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  s1(23, a)
+  h1(23, a)
 })
 
 /**
@@ -1101,8 +1117,8 @@ n(function(){
  */
 
 n(function(){
-  const a = s0(24)
-  const c = s1(0, a)
+  const a = h0(24)
+  const c = h1(0, a)
   return c
 })
 
@@ -1112,7 +1128,7 @@ n(function(){
 
 n(function(){
   const a = v(f)
-  s1(25, a)
+  h1(25, a)
 })
 
 /**
@@ -1121,8 +1137,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(26, a)
-  const e = s1(0, c)
+  const c = h1(26, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1132,8 +1148,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(27, a)
-  const e = s1(0, c)
+  const c = h1(27, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1143,8 +1159,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(28, a)
-  const e = s1(0, c)
+  const c = h1(28, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1154,8 +1170,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(29, a)
-  const e = s1(0, c)
+  const c = h1(29, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1165,8 +1181,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(30, a)
-  const e = s1(0, c)
+  const c = h1(30, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1176,8 +1192,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(31, a)
-  const e = s1(0, c)
+  const c = h1(31, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1187,8 +1203,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(32, a)
-  const e = s1(0, c)
+  const c = h1(32, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1198,8 +1214,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(33, a)
-  const e = s1(0, c)
+  const c = h1(33, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1209,8 +1225,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(34, a)
-  const e = s1(0, c)
+  const c = h1(34, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1220,8 +1236,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(35, a)
-  const e = s1(0, c)
+  const c = h1(35, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1231,8 +1247,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(36, a)
-  const e = s1(0, c)
+  const c = h1(36, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1242,8 +1258,8 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(37, a)
-  const e = s1(0, c)
+  const c = h1(37, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1254,8 +1270,8 @@ n(function(){
 n(function(){
   const a = v(o)
   const c = v(x)
-  const e = s2(38, a, c)
-  const m = s1(0, e)
+  const e = h2(38, a, c)
+  const m = h1(0, e)
   return m
 })
 
@@ -1265,8 +1281,8 @@ n(function(){
 
 n(function(){
   const a = v(o)
-  const c = s1(39, a)
-  const e = s1(0, c)
+  const c = h1(39, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1276,8 +1292,8 @@ n(function(){
 
 n(function(){
   const a = v(o)
-  const c = s1(40, a)
-  const e = s1(0, c)
+  const c = h1(40, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1288,7 +1304,7 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  s2(41, a, c)
+  h2(41, a, c)
 })
 
 /**
@@ -1296,8 +1312,8 @@ n(function(){
  */
 
 n(function(){
-  const a = s0(42)
-  const c = s1(0, a)
+  const a = h0(42)
+  const c = h1(0, a)
   return c
 })
 
@@ -1309,7 +1325,7 @@ n(function(){
   const a = v(o)
   const c = v(x)
   const e = v(i)
-  s3(43, a, c, e)
+  h3(43, a, c, e)
 })
 
 /**
@@ -1319,8 +1335,8 @@ n(function(){
 n(function(){
   const a = v(o)
   const c = v(x)
-  const e = s2(44, a, c)
-  const m = s1(0, e)
+  const e = h2(44, a, c)
+  const m = h1(0, e)
   return m
 })
 
@@ -1331,7 +1347,7 @@ n(function(){
 n(function(){
   const a = v(o)
   const c = v(x)
-  s2(45, a, c)
+  h2(45, a, c)
 })
 
 /**
@@ -1341,7 +1357,7 @@ n(function(){
 n(function(){
   const a = v(o)
   const c = v(x)
-  s2(46, a, c)
+  h2(46, a, c)
 })
 
 /**
@@ -1351,7 +1367,7 @@ n(function(){
 n(function(){
   const a = v(o)
   const c = v(x)
-  s2(47, a, c)
+  h2(47, a, c)
 })
 
 /**
@@ -1362,7 +1378,7 @@ n(function(){
   const a = v(o)
   const c = v(x)
   const e = v(i)
-  s3(48, a, c, e)
+  h3(48, a, c, e)
 })
 
 /**
@@ -1372,8 +1388,8 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  const e = s2(49, a, c)
-  const m = s1(0, e)
+  const e = h2(49, a, c)
+  const m = h1(0, e)
   return m
 })
 
@@ -1384,8 +1400,8 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  const e = s2(50, a, c)
-  const m = s1(0, e)
+  const e = h2(50, a, c)
+  const m = h1(0, e)
   return m
 })
 
@@ -1396,8 +1412,8 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  const e = s2(51, a, c)
-  const m = s1(0, e)
+  const e = h2(51, a, c)
+  const m = h1(0, e)
   return m
 })
 
@@ -1408,8 +1424,8 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  const e = s2(52, a, c)
-  const m = s1(0, e)
+  const e = h2(52, a, c)
+  const m = h1(0, e)
   return m
 })
 
@@ -1420,8 +1436,8 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  const e = s2(53, a, c)
-  const m = s1(0, e)
+  const e = h2(53, a, c)
+  const m = h1(0, e)
   return m
 })
 
@@ -1432,7 +1448,7 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  s2(54, a, c)
+  h2(54, a, c)
 })
 
 /**
@@ -1442,7 +1458,7 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  s2(55, a, c)
+  h2(55, a, c)
 })
 
 /**
@@ -1451,7 +1467,7 @@ n(function(){
 
 n(function(){
   const a = v(e)
-  s1(56, a)
+  h1(56, a)
 })
 
 /**
@@ -1461,8 +1477,8 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  const e = s2(57, a, c)
-  const m = s1(0, e)
+  const e = h2(57, a, c)
+  const m = h1(0, e)
   return m
 })
 
@@ -1473,8 +1489,8 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  const e = s2(58, a, c)
-  const m = s1(0, e)
+  const e = h2(58, a, c)
+  const m = h1(0, e)
   return m
 })
 
@@ -1485,8 +1501,8 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  const e = s2(59, a, c)
-  const m = s1(0, e)
+  const e = h2(59, a, c)
+  const m = h1(0, e)
   return m
 })
 
@@ -1497,9 +1513,20 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  const e = s2(60, a, c)
-  const m = s1(0, e)
+  const e = h2(60, a, c)
+  const m = h1(0, e)
   return m
+})
+
+/**
+ * CHECK_IF_TRUTHY
+ */
+
+n(function(){
+  const a = v(x)
+  const c = h1(61, a)
+  const e = h1(0, c)
+  return e
 })
 
 /**
@@ -1508,9 +1535,7 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(61, a)
-  const e = s1(0, c)
-  return e
+  h1(62, a)
 })
 
 /**
@@ -1519,8 +1544,17 @@ n(function(){
 
 n(function(){
   const a = v(x)
-  const c = s1(62, a)
-  const e = s1(0, c)
+  h1(63, a)
+})
+
+/**
+ * CHECK_IF_BLANK
+ */
+
+n(function(){
+  const a = v(x)
+  const c = h1(64, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1531,8 +1565,8 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  const e = s2(63, a, c)
-  const m = s1(0, e)
+  const e = h2(65, a, c)
+  const m = h1(0, e)
   return m
 })
 
@@ -1543,8 +1577,8 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  const e = s2(64, a, c)
-  const m = s1(0, e)
+  const e = h2(66, a, c)
+  const m = h1(0, e)
   return m
 })
 
@@ -1555,8 +1589,8 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  const e = s2(65, a, c)
-  const m = s1(0, e)
+  const e = h2(67, a, c)
+  const m = h1(0, e)
   return m
 })
 
@@ -1567,8 +1601,8 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  const e = s2(66, a, c)
-  const m = s1(0, e)
+  const e = h2(68, a, c)
+  const m = h1(0, e)
   return m
 })
 
@@ -1579,8 +1613,8 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  const e = s2(67, a, c)
-  const m = s1(0, e)
+  const e = h2(69, a, c)
+  const m = h1(0, e)
   return m
 })
 
@@ -1591,8 +1625,8 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  const e = s2(68, a, c)
-  const m = s1(0, e)
+  const e = h2(70, a, c)
+  const m = h1(0, e)
   return m
 })
 
@@ -1603,8 +1637,8 @@ n(function(){
 n(function(){
   const a = v(x)
   const c = v(o)
-  const e = s2(69, a, c)
-  const m = s1(0, e)
+  const e = h2(71, a, c)
+  const m = h1(0, e)
   return m
 })
 
@@ -1615,7 +1649,7 @@ n(function(){
 n(function(){
   const a = v(o)
   const c = v(x)
-  s2(70, a, c)
+  h2(72, a, c)
 })
 
 /**
@@ -1625,7 +1659,7 @@ n(function(){
 n(function(){
   const a = v(o)
   const c = v(x)
-  s2(71, a, c)
+  h2(73, a, c)
 })
 
 /**
@@ -1635,7 +1669,7 @@ n(function(){
 n(function(){
   const a = v(o)
   const c = v(x)
-  s2(72, a, c)
+  h2(74, a, c)
 })
 
 /**
@@ -1644,8 +1678,8 @@ n(function(){
 
 n(function(){
   const a = v(o)
-  const c = s1(73, a)
-  const e = s1(0, c)
+  const c = h1(75, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1655,8 +1689,8 @@ n(function(){
 
 n(function(){
   const a = v(o)
-  const c = s1(74, a)
-  const e = s1(0, c)
+  const c = h1(76, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1666,8 +1700,8 @@ n(function(){
 
 n(function(){
   const a = v(o)
-  const c = s1(75, a)
-  const e = s1(0, c)
+  const c = h1(77, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1677,8 +1711,8 @@ n(function(){
 
 n(function(){
   const a = v(o)
-  const c = s1(76, a)
-  const e = s1(0, c)
+  const c = h1(78, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1688,8 +1722,8 @@ n(function(){
 
 n(function(){
   const a = v(o)
-  const c = s1(77, a)
-  const e = s1(0, c)
+  const c = h1(79, a)
+  const e = h1(0, c)
   return e
 })
 
@@ -1700,7 +1734,7 @@ n(function(){
 n(function(){
   const a = v(o)
   const c = v(x)
-  s2(78, a, c)
+  h2(80, a, c)
 })
 
 

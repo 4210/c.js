@@ -226,11 +226,17 @@
   give: [x, o]
   call: x / o
   hold: true
-- name: check_if_true
+- name: check_if_truthy
   give: [x]
   call: "!!x"
   hold: true
+- name: check_if_true
+  give: [x]
+  call: "x === true"
 - name: check_if_false
+  give: [x]
+  call: "x === false"
+- name: check_if_blank
   give: [x]
   call: "!x"
   hold: true

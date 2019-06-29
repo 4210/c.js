@@ -10,7 +10,7 @@
 <br/>
 <br/>
 
-<h3 align="center">m.js</h3>
+<h3 align="center">x.js</h3>
 
 <br/>
 <br/>
@@ -42,11 +42,11 @@
 ### Installation
 
 ```bash
-npm install --save https://github.com/4210/c.js/tarball/master
+npm install --save https://github.com/4210/x.js/tarball/master
 ```
 
 ```html
-<script src="https://raw.githubusercontent.com/4210/c.js/master/index.js"></script>
+<script src="https://raw.githubusercontent.com/4210/x.js/master/index.js"></script>
 ```
 
 <br/>
@@ -56,11 +56,9 @@ npm install --save https://github.com/4210/c.js/tarball/master
 In Node.js you will have to require it.
 
 ```js
-const m = require('m.js')
+require('@4210/x')
 
-m(data)
+x(data)
 ```
 
 ### Introduction
-
-The `lib` folder contains the lowest level API (API 1) and the second level API (API 2) which only takes integer/binary input.

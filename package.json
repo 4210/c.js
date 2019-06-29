@@ -1,7 +1,9 @@
 {
+  "name": "@4210/x",
   "dependencies": {
     "csv-parse": "^4.4.3",
     "js-yaml": "^3.13.1",
     "uglify-es": "^3.3.9"
-  }
+  },
+  "main": "build/x.js"
 }
