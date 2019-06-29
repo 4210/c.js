@@ -170,7 +170,6 @@ d(function(q){
   i.push(q)
 })
 
-
 /**
  * POP
  */
@@ -179,7 +178,6 @@ h(function(){
   return a.pop()
 })
 
-
 /**
  * PUSH
  */
@@ -187,7 +185,6 @@ h(function(){
 h(function(){
   a.push(v)
 })
-
 
 /**
  * POP
@@ -198,7 +195,6 @@ t(function(){
   const b = h1(0, a)
   return b
 })
-
 
 /**
  * PUSH

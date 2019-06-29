@@ -33,15 +33,13 @@ function parse2(funcs) {
       return line
     }).join('\n')
 
-    hout[func.i] = `
-/**
+    hout[func.i] = `/**
  * ${name.toUpperCase()}
  */
 
 h(function(){\n${hbody}\n})
 `
-    tout[func.i] = `
-/**
+    tout[func.i] = `/**
  * ${name.toUpperCase()}
  */
 
