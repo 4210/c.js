@@ -10,7 +10,7 @@
 <br/>
 <br/>
 
-<h3 align="center">c.js</h3>
+<h3 align="center">m.js</h3>
 
 <br/>
 <br/>
@@ -23,15 +23,16 @@
 <br/>
 
 <p align="center">
-  JavaScript Storage Interface.
+  JavaScript System Interface.
 </p>
 
 <br/>
 <br/>
 
 <p align="center">
-  <a href="#usage">Installation</a> •
-  <a href="#license">Illustration</a>
+  <a href="#installation">Installation</a> •
+  <a href="#illustration">Illustration</a> •
+  <a href="#introduction">Introduction</a>
 </p>
 
 <br/>
@@ -55,5 +56,11 @@ npm install --save https://github.com/4210/c.js/tarball/master
 In Node.js you will have to require it.
 
 ```js
-require('c.js')
+const m = require('m.js')
+
+m(data)
 ```
+
+### Introduction
+
+The `lib` folder contains the lowest level API (API 1) and the second level API (API 2) which only takes integer/binary input.
