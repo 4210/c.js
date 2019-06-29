@@ -1,9 +1,41 @@
 
-# GNU General Public License
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
-<small>Version 3, 29 June 2007</small>
+<h3 align="center">GNU General Public License</h3>
 
-<small>Copyright (C) 2007 [Free Software Foundation, Inc.](http://fsf.org/)</small>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<p align="center">
+  Version 3, 29 June 2007
+</p>
+
+<br/>
+<br/>
+
+<p align="center">
+  Copyright (C) 2007 [Free Software Foundation, Inc.](http://fsf.org/)
+</p>
+
+<br/>
+<br/>
+<br/>
 
 Everyone is permitted to copy and distribute verbatim copies of this license
 document, but changing it is not allowed.

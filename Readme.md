@@ -62,3 +62,5 @@ x(data)
 ```
 
 ### Introduction
+
+This is licensed under the [GNU General Public License](LICENSE.md).
