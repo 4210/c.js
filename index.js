@@ -1,5 +1,21 @@
 
+/**
+ * Main.
+ */
+
+function m(e) {
+  t(v, e)
+}
+
+/**
+ * Entry function index in API 3.
+ */
+
 const v = 5
+
+/**
+ * Data containers.
+ */
 
 const a = [] // list4
 const e = [] // list1
@@ -23,6 +39,22 @@ function h2(q, a, b) {
   return e[q](a, b)
 }
 
+function h3(q, a, b, c) {
+  return e[q](a, b, c)
+}
+
+function h4(q, a, b, c, d) {
+  return e[q](a, b, c, d)
+}
+
+function h5(q, a, b, c, d, e) {
+  return e[q](a, b, c, d, e)
+}
+
+function h6(q, a, b, c, d, e, f) {
+  return e[q](a, b, c, d, e, f)
+}
+
 /**
  * Call API 2.
  */
@@ -39,6 +71,22 @@ function t2(q, a, b) {
   return o[q](a, b)
 }
 
+function t3(q, a, b, c) {
+  return o[q](a, b, c)
+}
+
+function t4(q, a, b, c, d) {
+  return o[q](a, b, c, d)
+}
+
+function t5(q, a, b, c, d, e) {
+  return o[q](a, b, c, d, e)
+}
+
+function t6(q, a, b, c, d, e, f) {
+  return o[q](a, b, c, d, e, f)
+}
+
 /**
  * Call API 3.
  */
@@ -53,6 +101,22 @@ function r1(q, a) {
 
 function r2(q, a, b) {
   return u[q](a, b)
+}
+
+function r3(q, a, b, c) {
+  return u[q](a, b, c)
+}
+
+function r4(q, a, b, c, d) {
+  return u[q](a, b, c, d)
+}
+
+function r5(q, a, b, c, d, e) {
+  return u[q](a, b, c, d, e)
+}
+
+function r6(q, a, b, c, d, e, f) {
+  return u[q](a, b, c, d, e, f)
 }
 
 /**
@@ -105,11 +169,3 @@ d(function(q){
   a[q] = undefined
   i.push(q)
 })
-
-/**
- * Main function.
- */
-
-function m(e) {
-  t(v, e)
-}

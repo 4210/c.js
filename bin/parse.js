@@ -20,6 +20,6 @@ const opts = {
 const full = start + '\n' + out[0] + '\n' + out[1]
 const m = UglifyJS.minify(full, opts)
 if (m.error) console.log(m)
-fs.writeFileSync('./build/m.js', m.code)
+fs.writeFileSync('./build/m.js', full)
 fs.writeFileSync('./build/m.min.js', m.code)
 fs.writeFileSync('./build/m.csv', out[2])
