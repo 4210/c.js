@@ -30,7 +30,7 @@
 <br/>
 
 <p align="center">
-  Copyright (C) 2007 [Free Software Foundation, Inc.](http://fsf.org/)
+  Copyright (C) 2007 <a href="https://fsf.org">Free Software Foundation</a>
 </p>
 
 <br/>

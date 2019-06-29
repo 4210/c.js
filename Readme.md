@@ -63,4 +63,4 @@ x(data)
 
 ### Introduction
 
-This is licensed under the [GNU General Public License](LICENSE.md).
+This is licensed under the [GNU General Public License](docs/License.md).
