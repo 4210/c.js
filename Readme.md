@@ -23,7 +23,7 @@
 <br/>
 
 <p align="center">
-  JavaScript System Interface.
+  JavaScript System Interface
 </p>
 
 <br/>
