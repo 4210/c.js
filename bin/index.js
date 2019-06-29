@@ -15,7 +15,7 @@ function parse2(funcs) {
   for (const name in funcs) {
     let func = funcs[name]
 
-    nout.push(name)
+    nout.push(`${func.i},${name}`)
 
     if (!func.h || !func.t) throw new Error(`Need both functions: ${name}.`)
 
@@ -49,7 +49,7 @@ t(function(){\n${tbody}\n})
 `
   }
 
-  const out = [ hout.join('\n'), tout.join('\n'), nout.join('\n') ]
+  const out = [ hout.join('\n'), tout.join('\n'), 'i,n\n' + nout.join('\n') ]
   return out
 }
 
