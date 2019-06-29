@@ -171,13 +171,41 @@ d(function(q){
 })
 
 /**
+ * GET_PI
+ */
+
+h(function(){
+  return Math.PI
+})
+/**
+ * FLOOR
+ */
+
+h(function(){
+  return Math.floor(x)
+})
+/**
+ * GET_PI
+ */
+
+t(function(){
+  return h0(0)
+})
+/**
+ * FLOOR
+ */
+
+t(function(){
+
+})
+
+/**
  * POP
  */
 
 h(function(){
   return a.pop()
 })
-
 /**
  * PUSH
  */
@@ -191,11 +219,10 @@ h(function(){
  */
 
 t(function(){
-  const a = d(1, x)
-  const b = h1(0, a)
+  const a = r1(1, x)
+  const b = h1(2, a)
   return b
 })
-
 /**
  * PUSH
  */
