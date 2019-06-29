@@ -1,19 +1,5 @@
 
 /**
- * Main.
- */
-
-function m(e) {
-  t(v, e)
-}
-
-/**
- * Entry function index in API 3.
- */
-
-const v = 5
-
-/**
  * Data containers.
  */
 
@@ -26,6 +12,10 @@ const u = [] // list3
 /**
  * Call API 1.
  */
+
+function h(q) {
+  return e[q].apply(e, Array.prototype.slice.call(arguments, 1))
+}
 
 function h0(q) {
   return e[q]()
@@ -59,6 +49,10 @@ function h6(q, a, b, c, d, e, f) {
  * Call API 2.
  */
 
+function t(q) {
+  return o[q].apply(o, Array.prototype.slice.call(arguments, 1))
+}
+
 function t0(q) {
   return o[q]()
 }
@@ -90,6 +84,10 @@ function t6(q, a, b, c, d, e, f) {
 /**
  * Call API 3.
  */
+
+function r(q) {
+  return u[q].apply(u, Array.prototype.slice.call(arguments, 1))
+}
 
 function r0(q) {
   return u[q]()
@@ -171,62 +169,35 @@ d(function(q){
 })
 
 /**
- * GET_PI
+ * Set data.
  */
 
-h(function(){
-  return Math.PI
-})
-/**
- * FLOOR
- */
-
-h(function(){
-  return Math.floor(x)
-})
-/**
- * GET_PI
- */
-
-t(function(){
-  return h0(0)
-})
-/**
- * FLOOR
- */
-
-t(function(){
-
-})
+function m(e) {
+  return d(0, e)
+}
 
 /**
- * POP
+ * Get data.
  */
 
-h(function(){
-  return a.pop()
-})
-/**
- * PUSH
- */
-
-h(function(){
-  a.push(v)
-})
+function v(x) {
+  return d(1, x)
+}
 
 /**
- * POP
+ * Clear data.
  */
 
-t(function(){
-  const a = r1(1, x)
-  const b = h1(2, a)
-  return b
-})
+function w(x) {
+  d(2, x)
+}
+
 /**
- * PUSH
+ * Main function.
  */
 
-t(function(){
+function x(o) {
+  t(5, o)
+}
 
-})
+this.x = x

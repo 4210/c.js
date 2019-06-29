@@ -1,0 +1,296 @@
+- name: hold
+  give: [x]
+  call: return m(x)
+- name: free
+  give: [x]
+  call: w(x)
+- name: print
+  give: [x]
+  call: console.log(x)
+- name: get_char_code
+  give: [x]
+  call: a.charCodeAt(x)
+  hold: true
+- name: parse_float
+  give: [x]
+  call: parseFloat(x)
+  hold: true
+- name: parse_int
+  give: [x]
+  call: parseInt(x)
+  hold: true
+- name: parse_number
+  give: [x]
+  call: Number(x)
+  hold: true
+- name: get_max
+  give: [x, o]
+  call: Math.max(x, o)
+  hold: true
+- name: get_min
+  give: [x, o]
+  call: Math.min(x, o)
+  hold: true
+- name: floor
+  give: [x]
+  call: Math.floor(x)
+  hold: true
+- name: ceil
+  give: [x]
+  call: Math.ceil(x)
+  hold: true
+- name: round
+  give: [x]
+  call: Math.round(x)
+  hold: true
+- name: get_abs
+  give: [x]
+  call: Math.abs(x)
+  hold: true
+- name: get_cos
+  give: [x]
+  call: Math.cos(x)
+  hold: true
+- name: get_acos
+  give: [x]
+  call: Math.acos(x)
+  hold: true
+- name: get_sin
+  give: [x]
+  call: Math.sin(x)
+  hold: true
+- name: get_asin
+  give: [x]
+  call: Math.asin(x)
+  hold: true
+- name: get_tan
+  give: [x]
+  call: Math.tan(x)
+  hold: true
+- name: get_atan
+  give: [x]
+  call: Math.atan(x)
+  hold: true
+- name: get_atan2
+  give: [x, o]
+  call: Math.atan2(x, o)
+  hold: true
+- name: get_log
+  give: [x]
+  call: Math.log(x)
+  hold: true
+- name: get_sqrt
+  give: [x]
+  call: Math.sqrt(x)
+  hold: true
+- name: sleep
+  give: [i, b]
+  call: setTimeout(b, i)
+  hold: true
+- name: clear_timeout
+  give: [x]
+  call: clearTimeout(x)
+- name: get_timestamp
+  call: Date.now()
+  hold: true
+- name: queue
+  give: [f]
+  call: setImmediate(f)
+- name: get_char_from_code
+  give: [x]
+  call: String.fromCharCode(x)
+  hold: true
+- name: get_char_from_code_point
+  give: [x]
+  call: String.fromCodePoint(x)
+  hold: true
+- name: check_if_missing
+  give: [x]
+  call: x == null
+  hold: true
+- name: check_if_null
+  give: [x]
+  call: x === null
+  hold: true
+- name: check_if_undefined
+  give: [x]
+  call: x === undefined
+  hold: true
+- name: check_if_promise
+  give: [x]
+  call: "!!x && typeof x.then === 'function'"
+  hold: true
+- name: check_if_array
+  give: [x]
+  call: Array.isArray(x)
+  hold: true
+- name: check_if_number
+  give: [x]
+  call: typeof x === 'number'
+  hold: true
+- name: check_if_string
+  give: [x]
+  call: typeof x === 'string'
+  hold: true
+- name: check_if_float
+  give: [x]
+  call: x === +x && x !== (x|0)
+  hold: true
+- name: check_if_integer
+  give: [x]
+  call: x === +x && x === (x|0)
+  hold: true
+- name: check_if_object
+  give: [x]
+  call: Object.prototype.toString.call(x) === '[object Object]'
+  hold: true
+- name: call
+  give: [o, x]
+  call: o[x].apply(o, Array.prototype.slice.call(arguments, 2))
+  hold: true
+- name: create
+  give: [o]
+  call: "new (Function.prototype.bind.apply(o, Array.prototype.slice.call(arguments)))"
+  hold: true
+- name: get_typeof
+  give: [o]
+  call: typeof o
+  hold: true
+- name: check_instanceof
+  give: [x, o]
+  call: x instanceof o
+- name: create_string
+  call: "''"
+  hold: true
+- name: set_attr
+  give: [o, x, i]
+  call: o[x] = i
+- name: get_attr
+  give: [o, x]
+  call: o[x]
+  hold: true
+- name: remove_attr
+  give: [o, x]
+  call: delete obj[attr]
+- name: branch
+  give: [o, x]
+  call: if (o) x()
+- name: branch_and_return
+  give: [o, x]
+  call: if (o) return x()
+- name: branch_else
+  give: [o, x, i]
+  call: if (o) { x() } else { i() }
+- name: shift_left
+  give: [x, o]
+  call: x << o
+  hold: true
+- name: shift_right
+  give: [x, o]
+  call: x >> o
+  hold: true
+- name: shift_right_unsigned
+  give: [x, o]
+  call: x >>> o
+  hold: true
+- name: compute_bitwise_or
+  give: [x, o]
+  call: x | o
+  hold: true
+- name: compute_bitwise_and
+  give: [x, o]
+  call: x & o
+  hold: true
+- name: try_catch
+  give: [x, o]
+  call: try { x() } catch (e) { o(e) }
+- name: try_catch_and_return
+  give: [x, o]
+  call: try { return x() } catch (e) { return o(e) }
+- name: throw
+  give: [e]
+  call: throw e
+- name: add
+  give: [x, o]
+  call: x + o
+  hold: true
+- name: subtract
+  give: [x, o]
+  call: x - o
+  hold: true
+- name: multiply
+  give: [x, o]
+  call: x * o
+  hold: true
+- name: divide
+  give: [x, o]
+  call: x / o
+  hold: true
+- name: check_if_true
+  give: [x]
+  call: "!!x"
+  hold: true
+- name: check_if_false
+  give: [x]
+  call: "!x"
+  hold: true
+- name: check_if_strict_equal
+  give: [x, o]
+  call: x === o
+  hold: true
+- name: check_gt
+  give: [x, o]
+  call: x > o
+  hold: true
+- name: check_lt
+  give: [x, o]
+  call: x < o
+  hold: true
+- name: check_gte
+  give: [x, o]
+  call: x >= o
+  hold: true
+- name: check_lte
+  give: [x, o]
+  call: x <= o
+  hold: true
+- name: check_and
+  give: [x, o]
+  call: x && o
+  hold: true
+- name: check_or
+  give: [x, o]
+  call: x || o
+  hold: true
+- name: set_title
+  give: [o, x]
+  call: o.title = x
+- name: set_src
+  give: [o, x]
+  call: o.src = x
+- name: set_disabled
+  give: [o, x]
+  call: o.disabled = x
+- name: get_title
+  give: [o]
+  call: o.title
+  hold: true
+- name: get_src
+  give: [o]
+  call: o.src
+  hold: true
+- name: get_disabled
+  give: [o]
+  call: o.disabled
+  hold: true
+- name: get_length
+  give: [o]
+  call: o.length
+  hold: true
+- name: pop
+  give: [o]
+  call: o.pop()
+  hold: true
+- name: push
+  give: [o, x]
+  call: o.push(x)
