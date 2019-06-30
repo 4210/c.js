@@ -1,5 +1,11 @@
 
 /**
+ * Expose main function.
+ */
+
+this.t = t
+
+/**
  * Data containers.
  */
 
@@ -46,7 +52,7 @@ function h6(q, a, b, c, d, e, f) {
 }
 
 /**
- * Call API 2.
+ * Call API 2, the main function.
  */
 
 function t(q) {
@@ -82,46 +88,10 @@ function t6(q, a, b, c, d, e, f) {
 }
 
 /**
- * Call API 3.
- */
-
-function r(q) {
-  return u[q].apply(u, Array.prototype.slice.call(arguments, 1))
-}
-
-function r0(q) {
-  return u[q]()
-}
-
-function r1(q, a) {
-  return u[q](a)
-}
-
-function r2(q, a, b) {
-  return u[q](a, b)
-}
-
-function r3(q, a, b, c) {
-  return u[q](a, b, c)
-}
-
-function r4(q, a, b, c, d) {
-  return u[q](a, b, c, d)
-}
-
-function r5(q, a, b, c, d, e) {
-  return u[q](a, b, c, d, e)
-}
-
-function r6(q, a, b, c, d, e, f) {
-  return u[q](a, b, c, d, e, f)
-}
-
-/**
  * Define API 1.
  */
 
-function s(x) {
+function n(x) {
   e.push(x)
 }
 
@@ -129,15 +99,15 @@ function s(x) {
  * Define API 2.
  */
 
-function n(x) {
+function r(x) {
   o.push(x)
 }
 
 /**
- * Define API 3.
+ * Define API 2.
  */
 
-function d(x) {
+function s(x) {
   u.push(x)
 }
 
@@ -145,7 +115,7 @@ function d(x) {
  * Set user data.
  */
 
-d(function(p){
+s(function(p){
   const q = i.pop() || a.length - 1
   a[q] = p
   return q
@@ -155,7 +125,7 @@ d(function(p){
  * Get user data.
  */
 
-d(function(q){
+s(function(q){
   return a[q]
 })
 
@@ -163,41 +133,15 @@ d(function(q){
  * Delete user data.
  */
 
-d(function(q){
+s(function(q){
   a[q] = undefined
   i.push(q)
 })
 
 /**
- * Set data.
- */
-
-function m(e) {
-  return d(0, e)
-}
-
-/**
  * Get data.
  */
 
-function v(x) {
-  return d(1, x)
+function d(x) {
+  return u[1](x)
 }
-
-/**
- * Clear data.
- */
-
-function w(x) {
-  d(2, x)
-}
-
-/**
- * Main function.
- */
-
-function x(o) {
-  t(5, o)
-}
-
-this.x = x

@@ -10,7 +10,7 @@
 <br/>
 <br/>
 
-<h3 align="center">x.js</h3>
+<h3 align="center">t.js</h3>
 
 <br/>
 <br/>
@@ -42,11 +42,11 @@
 ### Installation
 
 ```bash
-npm install --save https://github.com/4210/x.js/tarball/master
+npm install --save https://github.com/4210/t.js/tarball/master
 ```
 
 ```html
-<script src="https://raw.githubusercontent.com/4210/x.js/master/index.js"></script>
+<script src="https://raw.githubusercontent.com/4210/t.js/master/indet.js"></script>
 ```
 
 <br/>
@@ -56,9 +56,9 @@ npm install --save https://github.com/4210/x.js/tarball/master
 In Node.js you will have to require it.
 
 ```js
-require('@4210/x')
+require('@4210/t')
 
-x(data)
+t(5, 7)
 ```
 
 ### Introduction

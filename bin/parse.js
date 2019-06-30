@@ -8,12 +8,17 @@ const UglifyJS = require('uglify-es')
 const YAML = require('js-yaml')
 const zlib = require('zlib')
 const fs = require('fs')
-const {
-  parseMethods
-} = require('../lib')
+const parse = require('../lib')
+const path = require('path')
 
-const methods = parseMethods(readyaml('./src/index.yaml'))
-const headers = read('./src/index.js')
+let yaml = readyaml(path.resolve(__dirname, '../src/index.yaml'))
+if (process.argv[2]) {
+  yaml = yaml.concat(readyaml(process.argv[2]))
+}
+const methods = parse(yaml)
+const headers = read(path.resolve(__dirname, '../src/index.js'))
+
+const body = [ headers, methods[0], methods[1] ]
 
 /**
  * Main output.
@@ -21,9 +26,7 @@ const headers = read('./src/index.js')
 
 const out = [
   '(function(){\n',
-  headers,
-  methods[0],
-  methods[1],
+  body.join('\n'),
   '\n})()'
 ].join('\n')
 
@@ -31,10 +34,12 @@ const out = [
  * CSV names output.
  */
 
-const cout = [
+let cout = [
   'i,n',
   methods[2]
-].join('\n')
+]
+
+cout = cout.join('\n')
 
 /**
  * Minified output.
@@ -47,10 +52,14 @@ if (mout.error) console.log(mout)
  * Save to files.
  */
 
+fs.mkdirSync('./build', { recursive: true })
 write('./build/x.js', out)
 write('./build/x.min.js', mout.code)
 write('./build/x.min.js.gz', zlib.gzipSync(mout.code))
 write('./build/x.csv', cout)
+
+const stats = fs.statSync('./build/x.min.js.gz')
+console.log(stats.size)
 
 /**
  * Minify.
